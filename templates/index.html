@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flask MySQL App</title>
+  </head>
+  <body>
+    <h1>Data from MySQL</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Data</th>
+      </tr>
+      {% for row in rows %}
+        <tr>
+          <td>{{ row.0 }}</td>
+          <td>{{ row.1 }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
